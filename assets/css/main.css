@@ -1244,6 +1244,20 @@ input[type="radio"] + label:before {
     .image.main img {
       width: 100%; }
 
+.fixed-dimension {
+  height: 25vw; /* 25% of the viewport width */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the area without distortion */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.responsive-image {
+  width: 90%; /* Set the width to 25% of the parent container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the area without distortion */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
 a.image {
   overflow: hidden; }
   a.image img {
@@ -1252,10 +1266,10 @@ a.image {
     -ms-transition: -ms-transform 0.2s ease;
     transition: transform 0.2s ease; }
   a.image:hover img {
-    -moz-transform: scale(1.075);
-    -webkit-transform: scale(1.075);
-    -ms-transform: scale(1.075);
-    transform: scale(1.075); }
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
 
 /* List */
 ol {
@@ -1595,6 +1609,21 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.lab-link {
+  color: grey; /* Default color */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.lab-link:hover {
+  color: red; /* Change to red on hover */
+}
+
+.table-header {
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.3em; /* Increase the font size */
+  text-align: left; /* Optional: Align text to the left */
+}
 
 /* Features */
 .features {
@@ -2023,6 +2052,7 @@ button,
       box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
       height: 100%;
       left: 0;
+      overflow: hidden;
       position: fixed;
       top: 0;
       z-index: 10000; }
