@@ -1688,6 +1688,26 @@ button,
   color: transparent; /* Makes the text invisible */
 }
 
+.icon-link {
+  text-decoration: none; /* Remove any underline */
+  outline: none; /* Remove the focus outline */
+  border: none; /* Remove any border applied to the link */
+}
+
+.icon-link:focus {
+  outline: none; /* Remove the focus outline when the link is focused */
+  border: none; /* Ensure no border appears on focus */
+  box-shadow: none; /* Remove any box shadow applied on focus */
+}
+
+.icon-link .icon {
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.icon-link:hover .icon {
+  transform: scale(1.1); /* Grow the icon to 1.1 of its original size */
+}
+
 /* Features */
 .features {
   display: -moz-flex;
