@@ -1610,6 +1610,14 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+.responsive-image {
+  margin-left: 4rem; /* Push the image to the right */
+}
+
+p {
+  margin-bottom: 0.6rem;
+}
+
 .lab-link {
   color: grey; /* Default color */
   text-decoration: none; /* Optional: Remove underline */
